@@ -1,11 +1,11 @@
-# DataShield Enterprise Database Backup & Disaster Recovery Utility
+# erpo
 
 [![Java 21 LTS](https://img.shields.io/badge/Java-21%20LTS-orange.svg)](https://www.oracle.com/java/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)]()
 [![Encryption](https://img.shields.io/badge/Security-AES--256--GCM-red.svg)]()
 
-> **DataShield** is an enterprise-grade, high-performance command-line utility (CLI) for backing up and restoring **any** database management system (MySQL, PostgreSQL, MongoDB, SQLite, and Generic JDBC). Engineered with a reactive streaming pipeline, DataShield enforces constant $O(1)$ memory consumption regardless of database size, real-time SHA-256 cryptographic checksumming, AES-256-GCM authenticated encryption at rest, pluggable local and cloud storage (AWS S3, MinIO, Ceph, R2), selective table/collection restoration, automated scheduling, and rich Slack disaster-recovery alerting.
+> **erpo** is an enterprise-grade, high-performance command-line utility (CLI) for backing up and restoring **any** database management system (MySQL, PostgreSQL, MongoDB, SQLite, and Generic JDBC). Engineered with a reactive streaming pipeline, DataShield enforces constant $O(1)$ memory consumption regardless of database size, real-time SHA-256 cryptographic checksumming, AES-256-GCM authenticated encryption at rest, pluggable local and cloud storage (AWS S3, MinIO, Ceph, R2), selective table/collection restoration, automated scheduling, and rich Slack disaster-recovery alerting.
 
 ---
 
