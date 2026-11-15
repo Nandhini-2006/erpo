@@ -11,7 +11,7 @@
 
 ## Architecture & System Design
 
-DataShield is designed using **Hexagonal Clean Architecture** and the **Strategy Pattern (SPI)** to decouple storage, database connectivity, compression, and encryption into pluggable, independently testable modules:
+erpo is designed using **Hexagonal Clean Architecture** and the **Strategy Pattern (SPI)** to decouple storage, database connectivity, compression, and encryption into pluggable, independently testable modules:
 
 ```mermaid
 flowchart TD
