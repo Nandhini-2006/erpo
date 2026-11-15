@@ -1,0 +1,50 @@
+# ==============================================================================
+# DataShield Enterprise Configuration File
+# ==============================================================================
+
+# Target Database Management System
+# Supported: MYSQL, POSTGRESQL, MONGODB, SQLITE, GENERIC_JDBC
+database_type: MYSQL
+
+# Database Connection Coordinates
+host: "127.0.0.1"
+port: 3306
+database: "ecommerce_production"
+username: "backup_admin"
+password: "your_database_password"
+
+# Direct connection URI (Optional - overrides host/port if specified)
+# uri: "mongodb://user:pass@cluster0.mongodb.net/prod"
+
+# Backup Execution Strategy
+# Supported: FULL, INCREMENTAL, DIFFERENTIAL
+backup_type: FULL
+
+# Compression Algorithm
+# Supported: GZIP, ZIP, NONE
+compression: GZIP
+
+# AES-256-GCM Encryption Password (Optional - leave blank for unencrypted)
+encryption_password: "your_encryption_password"
+
+# Storage Target Destination
+# Local path (e.g. ./backups, /var/backups) or AWS S3 URI (e.g. s3://company-db-backups/prod)
+destination: "./backups"
+
+# Selective Table Filtering (Optional)
+include_tables:
+  - "users"
+  - "orders"
+  - "order_items"
+  - "transactions"
+
+exclude_tables:
+  - "audit_logs_temp"
+  - "cache_*"
+
+# Backup Retention Policy (Days to keep local backups before automated pruning)
+retention_days: 30
+
+# Slack Notification Webhook URL (Optional)
+# slack_webhook: "https://example.com/slack-webhook-endpoint"
+

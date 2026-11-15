@@ -1,0 +1,30 @@
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+logs/
+*.log
+
+# DataShield runtime / backups
+.datashield/
+backups/
+*.db
+*.db-shm
+*.db-wal
+
+# IDE / Editor files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+.factorypath
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
